@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Course Information</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="courseinfo.css">
+        <script src="courseinfo.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="#">
+    </head>
+    <body onload="OnLoad()">
+        <div class="nav">
+            <button class="navbuttons" onclick="clearElements()">Home</button>
+            <button class="navbuttons" onclick="Enrol()">Enrol in course</button>
+            <button class="navbuttons" onclick="print()">Print Page</button>
+        </div>
+        <div class="title" id="courseTitle"><h1>Course Name</h1></div>
+        
+        <div class="details-container">
+            <div id="details">
+                    
+                <p class="textaligndur"><b>Duration:</b></p>
+                <p class="textaligndur" id="detduration">4 years</p>
+                <p></p>
+                <p class="textaligndur" id="detcredits"><b>Credits:</b> 506</p>
+                <p></p>
+                <p class="textaligndur"><b>Location:</b></p>
+                <p class="textaligndur" id="detloc1">Pretoria</p>
+                <p class="textaligndur" id="detloc2">Kempton Park</p>
+                <p></p>
+                <p class="textaligndur"><b>Course start date:</b></p>
+                <p class="textaligndur" id="startdate">2024/01/01</p>
+
+            </div>
+
+            <div id="overview">
+                <p><b>Course Overview</b></p>
+                <p id="overviewtxt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore consectetur, tenetur, numquam, assumenda et a vitae accusamus in ratione totam delectus exercitationem repudiandae quos nobis voluptate vel aperiam molestiae cupiditate?</p>
+            </div>
+        </div>
+    </body>
+</html>
+

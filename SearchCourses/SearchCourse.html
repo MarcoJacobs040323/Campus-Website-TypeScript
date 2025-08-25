@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Search</title>
+     <script src="https://kit.fontawesome.com/37d02da06e.js" crossorigin="anonymous"></script> 
+    <script src="../CourseInfo/courseinfo.js"></script>
+    <link href="./SearchCourse.css" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+</head>
+<body onload="AssignElements()">
+     
+    <div class = "search-box">
+        <div class="row">
+            <input type="text" id="inputBox" placeholder="Search for course" autocomplete="off" onkeyup="FilterSearch()">
+            <button onclick="StoreValue('')"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box">
+            
+        </div>
+    </div>
+
+    <div class="title-cards">
+        <div id="BCOMCard">
+            <div class="Menu">
+                <h2>Bachelor of computing</h2>
+                <button type="button" onclick="StoreValue('bcom')">View Details</button>
+            </div>
+        </div>
+
+        <div id="BITCard">
+            <div class="Menu">
+                
+                <h2>Bachelor of Information Technology </h2>
+                <button type="button" onclick="StoreValue('bit')">View Details</button>
+            </div>
+        </div>
+
+        <div id="DiplomaCard">
+            <div class="Menu">
+                <h2>Diploma</h2>
+                <button type="button" onclick="StoreValue('diploma')">View Details</button>
+            </div>
+        </div>
+
+        <div id="CertificateCard">
+            <div class="Menu">
+                <h2>Certificate</h2>
+                <button type="button" onclick="StoreValue('certificate')">View Details</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121212;
+    color: #333;
+}
+
+/*Search box*/
+.search-box{
+    width: 600px;
+    background: #fff;
+    margin: 100px auto 0;
+    border-radius: 5px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+input{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+button .fa-solid{
+    width: 25px;
+    color: #555;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.result-box ul{
+    border-top: 1px solid black;
+    padding: 15px 10px;
+}
+
+.result-box li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.result-box ul li:hover{
+    background-color: #e9f3ff;
+}
+
+/*Title cards*/
+.title-cards{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    grid-template-rows: 18vw 18vw;
+    grid-gap: 1em;
+    padding-left: 20vw;
+}
+
+#BCOMCard{
+    background-image: url(Images/BCOM.png);
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+}
+
+#BITCard{
+    background-image: url(Images/BIT.webp);
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+}
+
+#DiplomaCard{
+    background-image: url(Images/Diploma.jpg);
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+}
+
+#CertificateCard{
+    background-image: url(Images/Certificate.webp);
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+}
+
+.title-cards > div{
+    margin: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title-cards button{
+    background-color: rgb(7, 240, 248);
+}
+
+/*Title card menus*/
+
+.Menu{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.Menu > h2{
+    text-align: center;
+}
+
+.Menu  button{
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    width: 100px;
+    height: 30px;
+}
+
+.Menu  button:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
